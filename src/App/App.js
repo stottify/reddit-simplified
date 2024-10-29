@@ -5,7 +5,7 @@ import {
   Routes
 } from "react-router-dom";
 
-import AppLayout from './AppLayout';
+import NavBar from '../Components/NavBar/NavBar';
 import Popular from '../Features/Popular/Popular';
 import Subreddits from '../Features/Subreddits/Subreddits';
 import CreatePost from '../Features/CreatePost/CreatePost';
@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<AppLayout/>}>
+        <Route path="/" element={<NavBar/>}>
           <Route path="popular" element={<Popular/>}/>
           <Route path="Subreddits" element={<Subreddits/>}/>
           <Route path="createPost" element={<CreatePost/>}/>
