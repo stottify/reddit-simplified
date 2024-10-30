@@ -6,7 +6,7 @@ import Hamburger from "./Hamburger";
 
  export default function NavBar() {
 
-    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+    const [hamburgerOpen, setHamburgerOpen] = useState(true);
 
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen);
