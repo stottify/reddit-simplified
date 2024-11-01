@@ -38,7 +38,9 @@ import Hamburger from "./Hamburger";
                     </li>
                 </ul>
                 <div className={hamburgerOpen ? styles.hamburger : styles.hamburgerActive} onClick={toggleHamburger}>
-                    <Hamburger />
+                    <Hamburger 
+                        isOpen={hamburgerOpen}
+                    />
                 </div>   
             </nav>
             <Outlet/>

@@ -4,7 +4,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-    z-index: 10;
+    z-index: 20;
 }
 
 .burger {
@@ -12,6 +12,44 @@
     height: 0.25rem;
     border-radius: 10px;
     background-color: white;
-    transform-origin: 1px;
     transition: all 0.3s linear;
+    transform: translateX(0);
+    transform-origin: 0;
+}
+
+.burger1 {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s linear;
+    transform-origin: 0;
+    transform: translateX(35px) rotate(45deg) ;
+    height: 0.25rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.burger2 { 
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    opacity: 0;
+    background-color: white;
+    transition: all 0.3s linear;
+    transform: translateX(100%);
+    background-color: white;
+}
+
+.burger3 {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s linear;
+    transform-origin: 0;
+    transform: translateX(35px) rotate(-45deg);
+    height: 0.25rem;
+    border-radius: 10px;
+    background-color: white;
 }

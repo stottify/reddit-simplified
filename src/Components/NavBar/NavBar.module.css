@@ -24,6 +24,7 @@ a {
     width: 100%;
     height: 5em;
     background-color: #F97316;
+    transition: all 0.3s linear;
 }
 
 .createPost {
@@ -37,34 +38,6 @@ a {
 
 .hamburger {
     display: none;
-}
-
-.hamburgerOpen {
-    background-color: #F97316;
-    height: 100vh;
-    width: 50vw;
-    padding-top: 50px;
-    position: absolute;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.hamburgerOpen ul {
-    flex-direction: column;
-}
-
-.hamburgerOpen li {
-    padding: 10px 10px;
-}
-
-.hamburgerOpenCreatePost {
-    width: 10em;
-    background-color: white;
-    color: #F97316;
-    border-radius: 10px;
-    padding: 10px;
 }
 
 @media (max-width: 767px) {
@@ -88,5 +61,31 @@ a {
 
     .navBar ul {
         display: none;
+    }
+    .hamburgerOpen {
+        background-color: #F97316;
+        transition: all 0.3s linear;
+        height: 100vh;
+        width: 50vh;
+        padding-top: 50px;
+        position: absolute;
+        z-index: 10;
+        display: flex;
+    }
+    
+    .hamburgerOpen ul {
+        flex-direction: column;
+    }
+    
+    .hamburgerOpen li {
+        padding: 10px 10px;
+    }
+    
+    .hamburgerOpenCreatePost {
+        width: 10em;
+        background-color: white;
+        color: #F97316;
+        border-radius: 10px;
+        padding: 10px;
     }
 }

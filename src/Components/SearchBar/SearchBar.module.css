@@ -38,10 +38,10 @@
     outline: none;
 }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 767px) { 
     .searchBarContainer {
         display: block;
-        position:absolute;
+        position: absolute;
         top: 20px;
         left: 20px;
     }
